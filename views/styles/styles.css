@@ -1,15 +1,65 @@
-header p{
-    display: inline-block;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Body Configurations */
+body{
+    position: relative;
+}
+/* Commons */
+header,footer{
+    background-color: rgb(120, 135, 171);
+    display:flex;
+    align-items: center;
+    color: rgb(6, 21, 61);
+    font-weight: bolder;
 }
 
-header p a:hover,header p a:visited:hover{
-    color:gray;
+/* Header configurations */
+header{
+    height: 60px;
+    margin-top: 0%;
+    color: rgb(6, 21, 61);
+}
+
+header h1{
+    margin-left: 2%;
+    margin-right: auto;
+}
+header ul{
+    margin-right: 2%;
+    margin-left: auto;
+}
+header li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header a:hover,header a:visited:hover{
+    color:rgb(33, 59, 129);
     transition: color 400ms;
 }
 
-header p a:visited{
-    color: black;
+header a:visited{
+    color: rgb(6, 21, 61);
 }
 header :last-child{
     float: none;
 }
+/* Footer configurations */
+footer{
+    justify-content:center;
+    height:40px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* Section configurations */
+section{
+    text-align: center;
+}
+
+
