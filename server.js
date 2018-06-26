@@ -28,6 +28,7 @@ app.use((req,res,next)=>{
 // });
 
 app.use(express.static(__dirname +'/public'));
+app.use(express.static(__dirname +'/views/styles'));
 
 hbs.registerHelper('getCurrentYear',()=>{
     return new Date().getFullYear();
@@ -48,6 +49,11 @@ app.get('/about',(req,res)=>{
     });
 });
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle:'Projects'
+    });
+});
 app.get('/bad',(req,res)=>{
     res.send({
         errorMessage: "Unable to execute this request!"

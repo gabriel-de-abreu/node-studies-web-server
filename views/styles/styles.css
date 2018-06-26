@@ -1,0 +1,15 @@
+header p{
+    display: inline-block;
+}
+
+header p a:hover,header p a:visited:hover{
+    color:gray;
+    transition: color 400ms;
+}
+
+header p a:visited{
+    color: black;
+}
+header :last-child{
+    float: none;
+}
